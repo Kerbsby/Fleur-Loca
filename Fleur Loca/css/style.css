@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+
+  body {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+
+/*navbar*/
+.navbar-brand{
+    margin-right: 0;
+}
+.navbar-brand img{
+    width: 150px;
+}  
+
+
+.navbar{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navbar .navbar-nav .nav-link{
+    color: #F4903A;
+    font-family:'Roboto Slab', serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+
+.navbar .navbar-nav .nav-item{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.navbar .navbar-nav{
+    margin-top: .5em;
+}
+
+
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #f4913aa6;
+}
+
+
+
+@media screen and (min-width:992px) {
+
+
+    .navbar-brand img{
+        width: 150px;
+     }  
+     
+        
+    
+    .navbar .container-fluid{
+        flex-direction: column;
+    }
+    
+    
+    }
+    
+    
+    @media screen and (max-width:991px) {
+        .navbar .navbar-nav{
+            border-top: 1px solid black;
+        }
+
+        .navbar .navbar-nav .nav-item{
+            padding-top: 1em;
+        }
+        
+        
+        
+    }
+
+
+
+
+/*hero*/
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.068),rgba(0, 0, 0, 0.459)), url(../images/sampleimage.png);
+        width: 100%;
+        min-height: 95vh;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        padding: 300px 0 200px;
+    }
+
+.headermessage h1{
+    font-size: 80px;
+    color: white;
+    font-family: 'Courgette', cursive;
+}
+
+
+.headermessage h5{
+    font-size: 20px;
+    color: white;
+    font-family: 'Courgetter', cursive;
+
+
+}
+
+.headermessage .btn{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 15vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-btn{
+    background-color: #F4903A;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.learn-btn:hover{
+   background-color: #FAD8E6;
+   color: black;
+}
+
+
+.contact-btn{
+    border-color: white;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover{
+    color: black;
+    border-color: black;
+}
+
+
+
+@media screen and (max-width:1399px) {
+    .headermessage h1{
+        font-size: 70px;
+        color: white;
+        font-family: 'Courgette', cursive;
+    }
+    
+    
+.headermessage h5{
+    font-size: 20px;
+    color: white;
+    font-family: 'Courgetter', cursive;
+
+
+}
+}
+
+@media screen and (max-width:1200px) {
+    .headermessage h1{
+        font-size: 60px;
+        color: white;
+        font-family: 'Courgette', cursive;
+    }
+    
+    
+.headermessage h5{
+    font-size: 15px;
+    color: white;
+    font-family: 'Courgetter', cursive;
+
+}
+}
+
+@media screen and (max-width:991px) {
+
+    #home{
+        min-height: 10vh;
+    }
+    .headermessage h1{
+        
+        font-size: 50px;
+        color: white;
+        font-family: 'Courgette', cursive;
+    }
+    
+    
+.headermessage h5{
+    font-size: 15px;
+    color: white;
+    font-family: 'Courgetter', cursive;
+
+}
+}
+
+@media screen and (max-width:767px) {
+
+    #home{
+        min-height: 20vh;  
+    
+    }
+
+  .headermessage{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    .headermessage h1{
+
+        font-size: 35px;
+        color: white;
+        font-family: 'Courgette', cursive;
+    }
+
+    
+    
+.headermessage h5{
+    font-size: 13px;
+    color: white;
+    font-family: 'Courgetter', cursive;
+
+}
+
+.headermessage .btn{
+    font-size: 12px;
+    width: 107px;
+    font-family: 'Poppins', sans-serif;
+}
+}
